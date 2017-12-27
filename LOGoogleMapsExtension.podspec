@@ -18,25 +18,32 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Google Maps Extension
                        DESC
 
-  s.homepage         = 'https://github.com/vivalalova0@gmail.com/LOGoogleMapsExtension'
+  s.homepage         = 'https://github.com/vivalalova/LOGoogleMapsExtension'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'vivalalova0@gmail.com' => 'vivalalova0@gmail.com' }
-  s.source           = { :git => 'https://github.com/vivalalova0@gmail.com/LOGoogleMapsExtension.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/vivalalova/LOGoogleMapsExtension.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'LOGoogleMapsExtension/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'LOGoogleMapsExtension' => ['LOGoogleMapsExtension/Assets/*.png']
-  # }
+
+  s.resource_bundles = {
+    'LOGoogleMapsExtension' => ['LOGoogleMapsExtension/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+	s.frameworks = 'UIKit'
+
+    s.static_framework = true
+  	s.dependency 'GoogleMaps', '~> 2.5.0'
+
+	s.pod_target_xcconfig = {
+		'SWIFT_VERSION' => '4.0'
+	}
+
 end

@@ -1,0 +1,16 @@
+PODS:
+  - LOGoogleMapsExtension (0.1.0)
+
+DEPENDENCIES:
+  - LOGoogleMapsExtension (from `../`)
+
+EXTERNAL SOURCES:
+  LOGoogleMapsExtension:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LOGoogleMapsExtension: 4d415460b8984c360ddbe2ec768940faeaf4ee94
+
+PODFILE CHECKSUM: e06f7e9855fd96f73d17841108ec643cc41f08cc
+
+COCOAPODS: 1.3.1
