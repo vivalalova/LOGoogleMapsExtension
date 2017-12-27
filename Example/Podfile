@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LOGoogleMapsExtension_Example' do
+  pod 'LOGoogleMapsExtension', :path => '../'
+
+  target 'LOGoogleMapsExtension_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
