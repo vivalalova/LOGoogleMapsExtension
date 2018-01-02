@@ -40,7 +40,9 @@ Google Maps Extension
 	s.frameworks = 'UIKit'
 
     s.static_framework = true
-  	s.dependency 'GoogleMaps', '~> 2.5.0'
+	s.dependency 'GoogleMaps', '~> 2.5.0'
+	s.dependency 'RxSwift', '~> 4.0.0'
+	s.dependency 'Polyline', '~> 4.2.0'
 
 	s.pod_target_xcconfig = {
 		'SWIFT_VERSION' => '4.0'
